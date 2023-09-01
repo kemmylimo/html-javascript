@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts</title>
+
+
+    <script>
+        // String methods
+        // Transforming a string to uppercase
+        const originalString = "I love Javascript!";
+        const upperCaseString = originalString.toUpperCase();
+        console.log(upperCaseString);
+
+        // Splitting a string into an array of words
+        const sentence = "This is a sample sentence.";
+        const wordArray = sentence.split(" ");
+        console.log(wordArray);
+
+        // Removing extra spaces from a string
+        const extraSpacesString = "    A string    with   extra   spaces.    ";
+        const trimmedString = extraSpacesString.trim();
+        console.log(trimmedString);
+
+        // Finding the index of a substring in a string
+        const searchString = "JavaScript is fun!";
+        const searchIndex = searchString.indexOf("is");
+        console.log(searchIndex);
+
+         // Replacing a substring in a string
+        const replacedString = "Hello, NAME!".replace("NAME", "Mike");
+        console.log(replacedString);
+
+
+        // Number methods
+
+
+        // Rounding a number to a fixed decimal places
+        const number = 42.567;
+        const fixedNumber = number.toFixed(2);
+        console.log(fixedNumber);
+
+        // Parsing a string to a floating-point number
+        const parsedNumber = parseFloat("3.14");
+        console.log(parsedNumber);
+
+        // Generating a random integer
+        const randomInteger = Math.floor(Math.random() * 100);
+        console.log(randomInteger);
+
+        // Calculating the result of an exponentiation
+        const exponentiation = Math.pow(2, 5);
+        console.log(exponentiation);
+
+        // Calculating the absolute value of a number
+        const absoluteValue = Math.abs(-10);
+        console.log(absoluteValue);
+
+
+
+        // Array methods
+
+
+
+        // Mapping over an array to double each element
+        const numberArray = [1, 2, 3, 4, 5];
+        const doubledArray = numberArray.map(num => num * 2);
+        console.log(doubledArray);
+
+         // Filtering an array to keep even numbers
+        const filteredArray = numberArray.filter(num => num % 2 === 0);
+        console.log(filteredArray);
+
+        // Calculating the sum of numbers in an array
+        const sum = numberArray.reduce((acc, num) => acc + num, 0);
+        console.log(sum);
+
+        // Concatenating two arrays
+        const concatenatedArray = numberArray.concat([6, 7, 8]);
+        console.log(concatenatedArray);
+
+        // Reversing the elements of an array
+        const reversedArray = numberArray.reverse();
+        console.log(reversedArray);
+
+
+
+        // Date methods
+
+
+
+        // Getting the current date as a string
+        const currentDate = new Date();
+        console.log(currentDate.toDateString());
+
+        // Creating a date in the future
+        const futureDate = new Date();
+        futureDate.setDate(currentDate.getDate() + 7);
+        console.log(futureDate.toDateString());
+
+        // Getting the ISO string representation of a date
+        const isoString = currentDate.toISOString();
+        console.log(isoString);
+
+        // Getting the UTC string representation of a date
+        const utcString = currentDate.toUTCString();
+        console.log(utcString);
+
+
+        // Getting the current month (0-indexed) of a date
+
+        const month = currentDate.getMonth();
+        console.log(month);
+
+
+
+        // Function methods
+
+
+
+        // Defining a function to greet a person
+        function greet(name) {
+            console.log(`Hello, ${name}!`);
+        }
+
+        // Creating a specific greeting function
+        
+        const greetWithAlice = greet.bind(null, 'Alice');
+        greetWithAlice();
+
+        // Defining a function to add two numbers
+        const add = (a, b) => a + b;
+        console.log(add(3, 5));
+    </script>
+</head>
+<body>
+    <h1> JavaScript Concepts</h1>
+
+<p> In this task, I implemented the following</p>
+
+    <li>String methods </li> 
+    <li>Number methods  </li> 
+    <li>Array methods </li> 
+    <li>Date methods  </li> 
+    <li>Function Methods </li> 
+
+
+
+    <p>Kindly check the browser console for output.</p>
+    
+</body>
+</html>
